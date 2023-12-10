@@ -27,10 +27,11 @@ class Skill:
 profile = Skill()
 #
 #print(profile)
-#print(len(profile))
+print(len(profile))
 
 profile.skills.append('PHP')
 profile.skills.append('MySQL')
+profile.skills.append("Pthon")
 
 print(profile)
 print(len(profile))

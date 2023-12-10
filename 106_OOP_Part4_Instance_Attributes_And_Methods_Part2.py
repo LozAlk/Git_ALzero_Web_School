@@ -38,7 +38,7 @@ class Meber:
             return f"Hello {self.fname}"
     def my_name_if_valuess(self):
 
-        return f"{self.name_Whie_title()}, Your Full Name Is: {self.fname}"
+        return f"{self.name_Whie_title()}, Your Full Name Is:{self.get_File_name()}"
 
     
 
@@ -53,4 +53,4 @@ meber_three = Meber ("Mona","Sara","Asad","Mona")
 #print(meber_three.name_Whie_title())
 
 
-print(meber_one.my_name_if_valuess())
+print(meber_three.my_name_if_valuess())
