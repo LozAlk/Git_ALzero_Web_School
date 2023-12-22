@@ -4,16 +4,16 @@ db = sqlite3.connect("app.db")
 cr = db.cursor()
 uid = 2
 
-# تعريف الجدول إذا لم يكن موجودًا
-cr.execute('''
-    CREATE TABLE IF NOT EXISTS skills (
-        id INTEGER PRIMARY KEY AUTOINCREMENT,
-        name TEXT NOT NULL,
-        progress TEXT NOT NULL,
-        user_di INTEGER NOT NULL,
-        FOREIGN KEY (user_di) REFERENCES users (id) 
-    )
-''')
+# # تعريف الجدول إذا لم يكن موجودًا
+# cr.execute('''
+#     CREATE TABLE IF NOT EXISTS skills (
+#         id INTEGER PRIMARY KEY AUTOINCREMENT,
+#         name TEXT NOT NULL,
+#         progress TEXT NOT NULL,
+#         user_di INTEGER NOT NULL,
+#         FOREIGN KEY (user_di) REFERENCES users (id) 
+#     )
+# ''')
 
 def commit_and_close():
     """Commit Changes and Close Connection To Database"""
