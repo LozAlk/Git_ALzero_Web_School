@@ -16,30 +16,29 @@ cr=db.cursor()
 
 # Create the Tables and Fields 
 cr.execute('create table if not exists users (user_id integer, name text)')
-cr.execute('create table if not exists skills (name text,progerss integer,user_id integer)')
+cr.execute('create table if not exists skills (name text,progress integer,user_id integer)')
 
 
 
 # Inserting Data
 # cr.execute('insert into users(user_id ,name) values(1,"seraj")')
-# cr.execute('insert into users(user_id ,name) values(1,"hamed")')
-# cr.execute('insert into users(user_id ,name) values(1,"alkherat")')
+# cr.execute('insert into users(user_id ,name) values(1,"ahmed")')
+# cr.execute('insert into users(user_id ,name) values(1,"alkharet")')
 
 
 
 cr.execute("select * from users")
 
-#print(cr.fetchone())
-# print(cr.fetchone())
-# print(cr.fetchone())
-# print(cr.fetchone())
-#print(cr.fetchall())
-#print(cr.fetchmany(2))
+print(cr.fetchone())
+print(cr.fetchone())
+print(cr.fetchone())
+print(cr.fetchone())
+print(cr.fetchall())
+print(cr.fetchmany(2))
 
 
 
 # Save (Commit ) Changes
-
 db.commit()
 
 # Close Database

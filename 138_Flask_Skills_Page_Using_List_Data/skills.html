@@ -1,0 +1,21 @@
+<!-- about.html -->
+{% extends 'base.html' %}
+{% block body %}
+<h1 class="page-head">{{page-head}}</h1>
+<p class="page-description">{{ description }}</p>
+{{skills}}
+
+
+
+{{%for skill in skills %}}
+
+<div>
+    {{skill}}
+
+</div>
+
+
+
+
+{{%endfor %}}
+{% endblock %}
