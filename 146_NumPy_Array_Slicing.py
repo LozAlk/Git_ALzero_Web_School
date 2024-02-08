@@ -24,6 +24,7 @@ b=np.array([["A","B","Z"],["C","D","Y"],["E","F","Z"],["M","N","O"]])
 
 print(b.ndim)
 print(b[1])
+
 print("#"*40)
 
 print(b[:3])
